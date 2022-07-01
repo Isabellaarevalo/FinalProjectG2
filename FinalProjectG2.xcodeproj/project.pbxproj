@@ -23,6 +23,9 @@
 		A1096BC7286CD01500FAC26B /* louis_george_caf in Resources */ = {isa = PBXBuildFile; fileRef = A1096BC6286CD01500FAC26B /* louis_george_caf */; };
 		A1096BCA286CD9D100FAC26B /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = A1096BC9286CD9D100FAC26B /* Algorithms */; };
 		E86026C3286DFFD300C0C951 /* DropDownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86026C2286DFFD300C0C951 /* DropDownMenu.swift */; };
+		E86026C7286EE36400C0C951 /* 2ndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86026C6286EE36400C0C951 /* 2ndViewController.swift */; };
+		E86026C9286EE3B400C0C951 /* thirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86026C8286EE3B400C0C951 /* thirdViewController.swift */; };
+		E86026CB286EE45E00C0C951 /* fourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86026CA286EE45E00C0C951 /* fourthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +71,9 @@
 		CFBE17571604776809FDD86F /* Pods-FinalProjectG2-FinalProjectG2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalProjectG2-FinalProjectG2UITests.debug.xcconfig"; path = "Target Support Files/Pods-FinalProjectG2-FinalProjectG2UITests/Pods-FinalProjectG2-FinalProjectG2UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D29786D00CD1FF6DE5E07C88 /* Pods-FinalProjectG2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalProjectG2Tests.debug.xcconfig"; path = "Target Support Files/Pods-FinalProjectG2Tests/Pods-FinalProjectG2Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E86026C2286DFFD300C0C951 /* DropDownMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownMenu.swift; sourceTree = "<group>"; };
+		E86026C6286EE36400C0C951 /* 2ndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2ndViewController.swift; sourceTree = "<group>"; };
+		E86026C8286EE3B400C0C951 /* thirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thirdViewController.swift; sourceTree = "<group>"; };
+		E86026CA286EE45E00C0C951 /* fourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fourthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +134,9 @@
 				5EE9FA59286B902700E63DDA /* AppDelegate.swift */,
 				5EE9FA5B286B902700E63DDA /* SceneDelegate.swift */,
 				5EE9FA5D286B902700E63DDA /* ViewController.swift */,
+				E86026CA286EE45E00C0C951 /* fourthViewController.swift */,
+				E86026C8286EE3B400C0C951 /* thirdViewController.swift */,
+				E86026C6286EE36400C0C951 /* 2ndViewController.swift */,
 				5EE9FA5F286B902700E63DDA /* Main.storyboard */,
 				E86026C2286DFFD300C0C951 /* DropDownMenu.swift */,
 				5EE9FA65286B902900E63DDA /* Assets.xcassets */,
@@ -389,8 +398,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EE9FA5E286B902700E63DDA /* ViewController.swift in Sources */,
+				E86026C9286EE3B400C0C951 /* thirdViewController.swift in Sources */,
 				5EE9FA64286B902700E63DDA /* FinalProjectG2.xcdatamodeld in Sources */,
 				E86026C3286DFFD300C0C951 /* DropDownMenu.swift in Sources */,
+				E86026CB286EE45E00C0C951 /* fourthViewController.swift in Sources */,
+				E86026C7286EE36400C0C951 /* 2ndViewController.swift in Sources */,
 				5EE9FA5A286B902700E63DDA /* AppDelegate.swift in Sources */,
 				5EE9FA5C286B902700E63DDA /* SceneDelegate.swift in Sources */,
 			);
