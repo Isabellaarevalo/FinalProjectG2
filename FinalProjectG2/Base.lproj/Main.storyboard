@@ -14,7 +14,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="DropDownMenu" customModule="FinalProjectG2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bEV-OE-Wm3">
@@ -38,9 +38,11 @@
                                     <color key="baseForegroundColor" red="0.87843137250000003" green="0.3411764706" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="Start:" destination="HEX-3w-fsi" eventType="touchUpInside" id="GKx-aE-Kr1"/>
+                                    <action selector="Start:" destination="HEX-3w-fsi" eventType="touchUpInside" id="YFJ-VH-7ib"/>
+                                    <action selector="action:" destination="HEX-3w-fsi" eventType="touchUpInside" id="q6n-EL-jYj"/>
+                                    <action selector="cc:" destination="HEX-3w-fsi" eventType="touchDragEnter" id="Xr5-nN-25E"/>
+                                    <action selector="ddd:" destination="HEX-3w-fsi" eventType="touchUpInside" id="syt-lS-lYH"/>
                                     <action selector="dsdsd:" destination="HEX-3w-fsi" eventType="touchUpInside" id="LmN-Gu-QeO"/>
-                                    <segue destination="gbe-uf-XtN" kind="show" id="e9I-Rn-hWA"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Step-by-step or clinck" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pa4-wF-j8W">
@@ -66,12 +68,6 @@
                                     <action selector="menuEditingDidBegin:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="gvL-k9-dXx"/>
                                     <action selector="menuEditingDidEnd:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="N7D-a9-eRe"/>
                                 </connections>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bcv-SR-CN1">
-                                <rect key="frame" x="176" y="466" width="80" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
                             </textField>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="VhI-Xp-4Rs">
                                 <rect key="frame" x="55" y="561" width="322" height="158"/>
@@ -103,6 +99,7 @@
                     <connections>
                         <outlet property="Options" destination="VhI-Xp-4Rs" id="0eb-w0-gww"/>
                         <outlet property="dropDownMenu" destination="aYn-xQ-7Wd" id="b7y-jI-jXt"/>
+                        <segue destination="HTr-IV-LQe" kind="presentation" identifier="Segue" modalPresentationStyle="fullScreen" id="Wnj-Rc-c82"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -115,7 +112,7 @@
             <objects>
                 <viewController id="gbe-uf-XtN" customClass="_ndViewController" customModule="FinalProjectG2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RRS-RL-X8P">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Credit cards" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5P6-ki-1bM">
@@ -201,9 +198,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Next"/>
-                                <connections>
-                                    <segue destination="ipu-ar-DtC" kind="showDetail" id="6vD-IR-CP3"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="oxl-Q8-H4G"/>
@@ -213,14 +207,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S9k-T0-xyU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1731.8840579710147" y="69.642857142857139"/>
+            <point key="canvasLocation" x="2642.0289855072465" y="69.642857142857139"/>
         </scene>
         <!--Third View Controller-->
         <scene sceneID="3zB-Pp-kmg">
             <objects>
                 <viewController id="ipu-ar-DtC" customClass="thirdViewController" customModule="FinalProjectG2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kWc-qT-vu6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Oo-6a-Hsi">
@@ -326,9 +320,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Next"/>
-                                <connections>
-                                    <segue destination="LyT-dn-bQe" kind="showDetail" id="srg-XI-Fbd"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="em7-C9-AH6"/>
@@ -338,14 +329,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VN9-xS-4cE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2526.0869565217395" y="69.642857142857139"/>
+            <point key="canvasLocation" x="4346.376811594203" y="69.642857142857139"/>
         </scene>
         <!--Fourth View Controller-->
         <scene sceneID="mAw-et-Wc9">
             <objects>
                 <viewController id="LyT-dn-bQe" customClass="fourthViewController" customModule="FinalProjectG2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mbQ-5D-TNi">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Scholarships: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gm-Yo-UpO">
@@ -437,9 +428,6 @@ A field of interest
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Home"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="4ph-XR-d0r"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fjA-6E-UBZ"/>
@@ -449,11 +437,12 @@ A field of interest
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xdT-rO-OEw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3284.057971014493" y="69.642857142857139"/>
+            <point key="canvasLocation" x="6014.4927536231889" y="69.642857142857139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="DsY-ia-D0S">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xf8-DL-tmB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Tml-kw-qDw" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vjz-9T-3Sy">
@@ -465,15 +454,64 @@ A field of interest
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Ifj-f6-lMX"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Xf8-DL-tmB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="63.768115942028992" y="69.642857142857139"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gSg-tp-FkA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HTr-IV-LQe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Qnb-Ab-6bE">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gbe-uf-XtN" kind="relationship" relationship="rootViewController" id="N1J-AA-xQT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hI8-BS-Kga" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1731.8840579710147" y="69.642857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eXy-Ga-Cy4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QfJ-in-mYY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Sml-CA-XQo">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ipu-ar-DtC" kind="relationship" relationship="rootViewController" id="mqX-zZ-0Bp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uhO-xq-hWF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3436.2318840579715" y="69.642857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8NS-Na-Ztq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KD3-qf-Ske" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4EO-qz-3Rl">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="LyT-dn-bQe" kind="relationship" relationship="rootViewController" id="vAU-s7-w9n"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C40-Tp-23m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5104.347826086957" y="69.642857142857139"/>
+        </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="e9I-Rn-hWA"/>
-        <segue reference="4ph-XR-d0r"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="Screenshot 2022-06-30 at 12.27.35 am" width="809" height="786"/>
         <systemColor name="systemBackgroundColor">
