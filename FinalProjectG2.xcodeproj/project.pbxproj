@@ -22,6 +22,9 @@
 		791A7C9873CB9061A16D4137 /* Pods_FinalProjectG2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6120DC92526E3955D558F6 /* Pods_FinalProjectG2Tests.framework */; };
 		A1096BC7286CD01500FAC26B /* louis_george_caf in Resources */ = {isa = PBXBuildFile; fileRef = A1096BC6286CD01500FAC26B /* louis_george_caf */; };
 		A1096BCA286CD9D100FAC26B /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = A1096BC9286CD9D100FAC26B /* Algorithms */; };
+		B50889D3286F319000E7EE60 /* hyperlinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50889D2286F319000E7EE60 /* hyperlinkViewController.swift */; };
+		B50889D5286F32DE00E7EE60 /* hypeerlink2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50889D4286F32DE00E7EE60 /* hypeerlink2ViewController.swift */; };
+		B50889D7286F33E200E7EE60 /* hypeerlink3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50889D6286F33E200E7EE60 /* hypeerlink3ViewController.swift */; };
 		E86026C3286DFFD300C0C951 /* DropDownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86026C2286DFFD300C0C951 /* DropDownMenu.swift */; };
 		E86026C7286EE36400C0C951 /* 2ndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86026C6286EE36400C0C951 /* 2ndViewController.swift */; };
 		E86026C9286EE3B400C0C951 /* thirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86026C8286EE3B400C0C951 /* thirdViewController.swift */; };
@@ -67,6 +70,9 @@
 		8E7D87798DE40CC8983B580C /* Pods_FinalProjectG2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinalProjectG2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E605A9D85A0EED56460CB6E /* Pods-FinalProjectG2-FinalProjectG2UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalProjectG2-FinalProjectG2UITests.release.xcconfig"; path = "Target Support Files/Pods-FinalProjectG2-FinalProjectG2UITests/Pods-FinalProjectG2-FinalProjectG2UITests.release.xcconfig"; sourceTree = "<group>"; };
 		A1096BC6286CD01500FAC26B /* louis_george_caf */ = {isa = PBXFileReference; lastKnownFileType = folder; path = louis_george_caf; sourceTree = "<group>"; };
+		B50889D2286F319000E7EE60 /* hyperlinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hyperlinkViewController.swift; sourceTree = "<group>"; };
+		B50889D4286F32DE00E7EE60 /* hypeerlink2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hypeerlink2ViewController.swift; sourceTree = "<group>"; };
+		B50889D6286F33E200E7EE60 /* hypeerlink3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hypeerlink3ViewController.swift; sourceTree = "<group>"; };
 		CF0712E4913A68A11EA4F80A /* Pods-FinalProjectG2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalProjectG2Tests.release.xcconfig"; path = "Target Support Files/Pods-FinalProjectG2Tests/Pods-FinalProjectG2Tests.release.xcconfig"; sourceTree = "<group>"; };
 		CFBE17571604776809FDD86F /* Pods-FinalProjectG2-FinalProjectG2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalProjectG2-FinalProjectG2UITests.debug.xcconfig"; path = "Target Support Files/Pods-FinalProjectG2-FinalProjectG2UITests/Pods-FinalProjectG2-FinalProjectG2UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D29786D00CD1FF6DE5E07C88 /* Pods-FinalProjectG2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalProjectG2Tests.debug.xcconfig"; path = "Target Support Files/Pods-FinalProjectG2Tests/Pods-FinalProjectG2Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -138,6 +144,9 @@
 				E86026C8286EE3B400C0C951 /* thirdViewController.swift */,
 				E86026C6286EE36400C0C951 /* 2ndViewController.swift */,
 				5EE9FA5F286B902700E63DDA /* Main.storyboard */,
+				B50889D6286F33E200E7EE60 /* hypeerlink3ViewController.swift */,
+				B50889D4286F32DE00E7EE60 /* hypeerlink2ViewController.swift */,
+				B50889D2286F319000E7EE60 /* hyperlinkViewController.swift */,
 				E86026C2286DFFD300C0C951 /* DropDownMenu.swift */,
 				5EE9FA65286B902900E63DDA /* Assets.xcassets */,
 				5EE9FA67286B902900E63DDA /* LaunchScreen.storyboard */,
@@ -403,8 +412,11 @@
 				E86026C3286DFFD300C0C951 /* DropDownMenu.swift in Sources */,
 				E86026CB286EE45E00C0C951 /* fourthViewController.swift in Sources */,
 				E86026C7286EE36400C0C951 /* 2ndViewController.swift in Sources */,
+				B50889D5286F32DE00E7EE60 /* hypeerlink2ViewController.swift in Sources */,
 				5EE9FA5A286B902700E63DDA /* AppDelegate.swift in Sources */,
 				5EE9FA5C286B902700E63DDA /* SceneDelegate.swift in Sources */,
+				B50889D3286F319000E7EE60 /* hyperlinkViewController.swift in Sources */,
+				B50889D7286F33E200E7EE60 /* hypeerlink3ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
